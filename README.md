@@ -111,7 +111,7 @@ Broadcasting in TensorFlow is a technique that automatically expands the shape o
 - If the model is well-regularized, increasing epochs may lead to **higher accuracy** and **lower loss**.
 - However, training for too long without proper validation can lead to **overfitting**, where validation performance worsens despite improving training performance.
 - Using **early stopping** or **monitoring validation loss** through TensorBoard helps decide the optimal number of epochs.
-#How to Run
+## How to Run
 ### 1. Clone the Repository
 git clone <your-repo-url>
 cd home_assignment_1
