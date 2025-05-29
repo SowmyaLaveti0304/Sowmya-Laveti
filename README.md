@@ -1,57 +1,81 @@
-#Home Assignment 1 – Summer 2025
-Student Name: Sowmya Laveti Student Id: 700771347 University of Central Missouri
-Course: CS5720 Neural Networks and Deep Learning
-##Assignment Overview
+# Home Assignment 1 – Summer 2025  
+Student Name: Sowmya Laveti  
+Student ID: 700771347  
+University: University of Central Missouri  
+Course: CS5720 – Neural Networks and Deep Learning  
+
+---
+
+## Assignment Overview  
 This assignment is divided into three key parts:
+
 1. Tensor Manipulations & Reshaping
 2. Loss Functions & Hyperparameter Tuning
 3. Neural Network Training with TensorBoard
-##1. Tensor Manipulations & Reshaping
-###Task completed:
+
+---
+
+## Part 1: Tensor Manipulations & Reshaping
+
+### Tasks Completed:
 1. Created a random tensor with shape (4, 6).
-2. Found it's rank and shape using TensorFlow functions.
-3. Reshaped it into (2, 3, 4) and transposed it to (3, 2, 4).
-4. Broadcasted a smaller tensor (1, 4) and added it.
-###Outputs:
-1. Original Shape: (4, 6)
-2. Rank: 2
-3. Reshaped Shape: (2, 3, 4)
-4. Transposed Shape: (3, 2, 4)
-###Broadcasting Explaination:
-   ***Broadcasting*** is a method used by TensorFlow to perform arithmetic operations on tensors with different shapes. It automatically expands the smaller tensor’s dimensions to match the shape of the larger tensor without copying data, enabling efficient computation.
-##2. Loss Functions & Hyperparameter Tuning
-###Tasks Completed:
+2. Found its rank and shape using TensorFlow functions.
+3. Reshaped it to (2, 3, 4) and transposed it to (3, 2, 4).
+4. Broadcasted a smaller tensor of shape (1, 4) and added it to the larger tensor.
+
+### Outputs:
+- Original Shape: (4, 6)  
+- Rank: 2  
+- Reshaped Shape: (2, 3, 4)  
+- Transposed Shape: (3, 2, 4)  
+
+### Broadcasting Explanation:
+Broadcasting in TensorFlow is a technique that automatically expands the shape of a smaller tensor to match a larger one along compatible dimensions. This allows element-wise operations between tensors of different shapes without needing explicit reshaping or copying data, making computations more efficient and memory-friendly.
+
+---
+
+## Part 2: Loss Functions & Hyperparameter Tuning
+
+### Tasks Completed:
 1. Defined sample true labels and model predictions.
 2. Calculated:
-    Mean Squared Error (MSE)
-    Categorical Cross-Entropy (CCE)
-3. Modified predictions and recalculated losses.
+   - Mean Squared Error (MSE)
+   - Categorical Cross-Entropy (CCE)
+3. Modified predictions and recalculated the losses.
 4. Plotted a bar chart comparing MSE and CCE.
-###Results:
-|Prediction Version  | MSE Loss     | CCE Loss     |
-|--------------------|--------------|--------------|
-| Intial             | 0.0167       | 0.3562       |
-| Modified           | 0.0102	      | 0.2594       |
-###Observations:
-1. **MSE** is more sensitive to small differences across all predicted values.
-2. **CCE** is more appropriate for classification tasks as it penalizes incorrect class probabilities more heavily.
 
-##Part 3: Neural Network Training with TensorBoard
-###Tasks Completed:
+### Results:
+
+| Prediction Version | MSE Loss | CCE Loss |
+|--------------------|----------|----------|
+| Initial            | 0.0167   | 0.3562   |
+| Modified           | 0.0102   | 0.2594   |
+
+### Observations:
+1. MSE is more sensitive to small differences across all predicted values.
+2. CCE is more appropriate for classification tasks as it heavily penalizes incorrect class probabilities.
+
+---
+
+## Part 3: Neural Network Training with TensorBoard
+
+### Tasks Completed:
 1. Loaded and preprocessed the MNIST dataset.
 2. Built a simple neural network model.
-3. Trained the model for 5 epochs with TensorBoard logging.
+3. Trained the model for 5 epochs with TensorBoard logging enabled.
 4. Analyzed training and validation metrics using TensorBoard.
-###Model Details:
-| Metric           | Value                        |
-|------------------|------------------------------|
-| Loss Function | Sparse Categorical Crossentropy |
-| Optimizer     | Adam                            |
-| Learning Rate | Default (0.001)                 |
-| Epochs        | 5                               |
-| Batch Size    | 32                              |
 
-###Accuracy & Loss:
+### Model Configuration:
+
+| Metric           | Value                          |
+|------------------|---------------------------------|
+| Loss Function     | Sparse Categorical Crossentropy |
+| Optimizer         | Adam                            |
+| Learning Rate     | Default (0.001)                 |
+| Epochs            | 5                               |
+| Batch Size        | 32                              |
+
+### Accuracy & Loss Summary:
 
 | Epoch | Accuracy | Loss   | Val Accuracy | Val Loss |
 |-------|----------|--------|--------------|----------|
@@ -61,13 +85,11 @@ This assignment is divided into three key parts:
 | 4     | 0.9736   | 0.0876 | 0.9747       | 0.0779   |
 | 5     | 0.9774   | 0.0730 | 0.9779       | 0.0746   |
 
-### 📁 TensorBoard Logs:
-- Logs saved in: `logs/fit/`
-- To launch TensorBoard, run:
+### TensorBoard Logs:
+- Logs saved in: logs/fit/
+- To launch TensorBoard:
   ```bash
   tensorboard --logdir=logs/fit
-
-
 ## Questions & Answers:
 
 ### 1. What patterns do you observe in the training and validation accuracy curves?
