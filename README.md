@@ -114,7 +114,7 @@ Broadcasting in TensorFlow is a technique that automatically expands the shape o
 ## How to Run
 ### 1. Clone the Repository
 git clone <https://github.com/SowmyaLaveti0304/Sowmya-Laveti.git>
--cd home_assignment_1
+&& cd Sowmya_Laveti
 
 ### 2. Install Dependencies
 pip install -r requirements.txt
