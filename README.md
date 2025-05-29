@@ -28,10 +28,10 @@ This assignment is divided into three key parts:
 3. Modified predictions and recalculated losses.
 4. Plotted a bar chart comparing MSE and CCE.
 ###Results:
-|Prediction Version    | MSE Loss     | CCE Loss     |
-|---------------|---------------|---------------|
-| Intial  | 0.0167 | 0.3562  |
-| Modified | 0.0102	| 0.2594 |
+|Prediction Version  | MSE Loss     | CCE Loss     |
+|--------------------|--------------|--------------|
+| Intial             | 0.0167       | 0.3562       |
+| Modified           | 0.0102	      | 0.2594       |
 ###Observations:
 1. **MSE** is more sensitive to small differences across all predicted values.
 2. **CCE** is more appropriate for classification tasks as it penalizes incorrect class probabilities more heavily.
@@ -43,13 +43,13 @@ This assignment is divided into three key parts:
 3. Trained the model for 5 epochs with TensorBoard logging.
 4. Analyzed training and validation metrics using TensorBoard.
 ###Model Details:
-| Metric           | Value                  |
-|------------------|------------------------|
-| **Loss Function** | Sparse Categorical Crossentropy |
-| **Optimizer**     | Adam                   |
-| **Learning Rate** | Default (0.001)        |
-| **Epochs**        | 5                      |
-| **Batch Size**    | 32                     |
+| Metric           | Value                        |
+|------------------|------------------------------|
+| Loss Function | Sparse Categorical Crossentropy |
+| Optimizer     | Adam                            |
+| Learning Rate | Default (0.001)                 |
+| Epochs        | 5                               |
+| Batch Size    | 32                              |
 
 ###Accuracy & Loss:
 
