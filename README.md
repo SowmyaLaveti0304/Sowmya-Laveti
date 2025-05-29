@@ -113,7 +113,7 @@ Broadcasting in TensorFlow is a technique that automatically expands the shape o
 - Using **early stopping** or **monitoring validation loss** through TensorBoard helps decide the optimal number of epochs.
 ## How to Run
 ### 1. Clone the Repository
-git clone <your-repo-url>
+git clone <https://github.com/SowmyaLaveti0304/Sowmya-Laveti.git>
 cd home_assignment_1
 
 ### 2. Install Dependencies
