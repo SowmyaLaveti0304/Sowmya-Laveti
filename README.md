@@ -89,20 +89,21 @@ This assignment is divided into three key parts:
 - If the model is well-regularized, increasing epochs may lead to **higher accuracy** and **lower loss**.
 - However, training for too long without proper validation can lead to **overfitting**, where validation performance worsens despite improving training performance.
 - Using **early stopping** or **monitoring validation loss** through TensorBoard helps decide the optimal number of epochs.
-# 1. Clone the Repository
+#How to Run
+### 1. Clone the Repository
 git clone <your-repo-url>
 cd home_assignment_1
 
-# 2. Install Dependencies
+### 2. Install Dependencies
 pip install -r requirements.txt
 
-# 3. Run the Python Scripts
+### 3. Run the Python Scripts
 1. Tensor_Manipulations_Reshaping.py
 2. Loss_Functions_Hyperparameter_Tuning.py
 3. Logto_TensorBoard.py
 
-# 4. Launch TensorBoard
+### 4. Launch TensorBoard
 tensorboard --logdir=logs/fit
 
-# After launching, open your browser and go to:
-# http://localhost:6006
+#### After launching, open your browser and go to:
+#### http://localhost:6006
